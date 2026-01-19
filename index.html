@@ -4,19 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sepehr Taherzadeh - Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="theme-switch">
-            <input type="checkbox" id="theme-toggle" />
-            <label for="theme-toggle" class="switch-label">
-                <svg class="cyber-icon" viewBox="0 0 24 24">
-                    <path
-                        d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"
-                    />
-                </svg>
-            </label>
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="#hero" class="nav-logo">ST</a>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="decorative-element">
+            <span class="cute-emoji">✨</span>
         </div>
         <main>
             <section id="hero">
@@ -31,14 +39,9 @@
                         </div>
                         <div class="hero-text">
                             <h1>Sepehr Taherzadeh</h1>
+                            <p class="role">CS Freshman @ Texas A&M University</p>
                             <p class="subtitle">
-                                Hi, I’m Sepehr. I’m 18 and passionate about
-                                technology—especially programming, machine
-                                learning, math, and physics. I’m also into
-                                robotics, biotech, and space—fields where
-                                software meets the physical world and expands
-                                what’s possible. I enjoy learning new things and
-                                exploring complex ideas.
+                                Building the future through AI, machine learning, and robotics.
                             </p>
                             <div class="links-container">
                                 <a
@@ -103,8 +106,170 @@
                         </div>
                     </div>
                 </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <svg class="scroll-arrow" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="content">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <p>
+                            I'm an 18-year-old Computer Science student at Texas A&M University with a deep passion for
+                            technology and innovation. My interests span across machine learning, artificial intelligence,
+                            competitive programming, and robotics—fields where computation meets real-world impact.
+                        </p>
+                        <p>
+                            Whether it's training neural networks with PyTorch, solving algorithmic challenges, or exploring
+                            the intersection of software and hardware, I'm driven by curiosity and the desire to build
+                            systems that push boundaries. I'm particularly fascinated by how AI can transform robotics,
+                            biotech, and space exploration.
+                        </p>
+                        <p>
+                            Beyond coursework, I enjoy diving into complex problems, contributing to open-source projects,
+                            and continuously learning new technologies. I believe the best way to learn is by building,
+                            and I'm always working on something new.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="content">
+                    <h2>Skills & Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="category-icon">🤖</div>
+                            <h3>ML & AI</h3>
+                            <div class="skill-tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">scikit-learn</span>
+                                <span class="tag">Neural Networks</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="category-icon">💻</div>
+                            <h3>Programming</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Algorithms</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="category-icon">🛠️</div>
+                            <h3>Tools & Platforms</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Jupyter</span>
+                                <span class="tag">VS Code</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="category-icon">🎯</div>
+                            <h3>Interests</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Competitive Programming</span>
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Research</span>
+                                <span class="tag">Mathematics</span>
+                                <span class="tag">Physics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="content">
+                    <h2>Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Coming Soon</h3>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="GitHub">
+                                        <svg viewBox="0 0 24 24" width="20" height="20">
+                                            <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Working on exciting ML and robotics projects. Check back soon to see what I'm building!
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Your Project Here</h3>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="GitHub">
+                                        <svg viewBox="0 0 24 24" width="20" height="20">
+                                            <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Add your amazing projects here! Edit the HTML to showcase your work.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="content">
+                    <h2>Let's Connect</h2>
+                    <p class="contact-subtitle">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to contribute to exciting work.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:sepehrth85@gmail.com" class="contact-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            Email Me
+                        </a>
+                        <a href="https://linkedin.com/in/sepehr-taherzadeh" target="_blank" class="contact-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/SepehrTH" target="_blank" class="contact-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
+
+        <footer>
+            <p>&copy; 2025 Sepehr Taherzadeh. Built with passion for technology.</p>
+        </footer>
 
         <script src="script.js"></script>
     </body>
